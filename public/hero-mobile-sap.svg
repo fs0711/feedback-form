@@ -1,0 +1,24 @@
+<svg width="375" height="667" viewBox="0 0 375 667" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="375" height="667" fill="#3143A4"/>
+  
+  <!-- Geometric Pattern -->
+  <defs>
+    <pattern id="geometric" patternUnits="userSpaceOnUse" width="80" height="80">
+      <polygon points="0,0 40,0 80,40 80,80 40,80 0,40" fill="#4F79FF" opacity="0.3"/>
+      <polygon points="40,0 80,0 80,40 40,40" fill="#6F96FF" opacity="0.4"/>
+      <polygon points="0,40 40,40 40,80 0,80" fill="#8FB4FF" opacity="0.3"/>
+      <polygon points="40,40 80,40 80,80 40,80" fill="#AFD4FF" opacity="0.2"/>
+    </pattern>
+  </defs>
+  
+  <rect width="375" height="667" fill="url(#geometric)"/>
+  
+  <!-- SAP Branding -->
+  <text x="20" y="100" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">SAP</text>
+  <text x="20" y="130" font-family="Arial, sans-serif" font-size="14" fill="white">Bring out your best.</text>
+  
+  <!-- Content -->
+  <text x="20" y="180" font-family="Arial, sans-serif" font-size="12" fill="white">Supply Chain Management</text>
+  <text x="20" y="220" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Unlock Innovation and Optimize</text>
+  <text x="20" y="250" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">Efficiency in Operations</text>
+</svg>
