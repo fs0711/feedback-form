@@ -20,8 +20,6 @@ export async function POST(request) {
     if (!validateEmail(email)) {
       return Response.json({ error: "Invalid email format" }, { status: 400 });
     }
-
-    // Validate topic enum
     const validTopics = [
       "AI in HR",
       "People intelligence",
