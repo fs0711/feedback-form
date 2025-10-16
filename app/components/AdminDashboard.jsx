@@ -217,7 +217,7 @@ const AdminDashboard = () => {
   const fetchFeedback = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:3000/api/feedback");
+      const response = await fetch("/api/feedback");
 
       if (!response.ok) {
         throw new Error("Failed to fetch feedback");
@@ -236,7 +236,7 @@ const AdminDashboard = () => {
 
   const fetchStats = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/feedback/stats");
+      const response = await fetch("/api/feedback/stats");
 
       if (!response.ok) {
         throw new Error("Failed to fetch stats");
@@ -253,7 +253,7 @@ const AdminDashboard = () => {
     try {
       setExporting(true);
 
-      const response = await fetch("http://localhost:3000/api/feedback/export");
+      const response = await fetch("/api/feedback/export");
 
       if (!response.ok) {
         throw new Error("Failed to export data");
@@ -299,7 +299,7 @@ const AdminDashboard = () => {
       const feedbackFormUrl =
         "https://sapeventfeedbackform.online.tgtdemo.com/feedback";
 
-      const response = await fetch("http://localhost:3000/api/qrcode", {
+      const response = await fetch("/api/qrcode", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -408,7 +408,7 @@ const AdminDashboard = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/api/feedback/${feedbackToDelete}`,
+        `/api/feedback/${feedbackToDelete}`,
         {
           method: "DELETE",
         }

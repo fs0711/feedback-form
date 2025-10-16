@@ -17,7 +17,7 @@ const QRCodeGenerator = ({ formUrl = 'http://supplychain.tpm' }) => {
       // Generate QR code for direct form access
       const directFormUrl = `${window.location.origin}?view=form`;
       
-      const response = await fetch('http://localhost:3000/api/qrcode', {
+      const response = await fetch('/api/qrcode', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

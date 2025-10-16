@@ -41,7 +41,7 @@ function FeedbackForm() {
         reason: formData.connectFor || ''
       }
       
-      const response = await fetch('http://localhost:3000/api/feedback', {
+      const response = await fetch('/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
