@@ -45,16 +45,16 @@ module.exports = {
   ],
 
   // Deployment configuration (optional)
-  deploy: {
-    production: {
-      user: 'root',
-      host: '127.0.0.1',
-      ref: 'origin/main',
-      repo: 'git@github.com:fs0711/feedback-form.git',
-      path: '/home/sapfeedback',
-      'pre-deploy-local': '',
-      'post-deploy': 'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
-      'pre-setup': ''
-    }
-  }
+//   deploy: {
+//     production: {
+//       user: 'root',
+//       host: '127.0.0.1',
+//       ref: 'origin/main',
+//       repo: 'git@github.com:fs0711/feedback-form.git',
+//       path: '/home/sapfeedback',
+//       'pre-deploy-local': '',
+//       'post-deploy': 'npm install && npm run build && pm2 reload ecosystem.config.js --env production',
+//       'pre-setup': ''
+//     }
+//   }
 };
